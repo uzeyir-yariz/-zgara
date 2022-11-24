@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid ;
+}
+
+/*header bölümü*/
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2.5rem 5rem 0rem 5rem;
+}
+
+header > a:link,
+header > ul > li > a:link{
+    text-decoration: none;
+    color: black;
+}
+
+header > ul{list-style: none;}
+header > ul > li{float: left;}
+header > ul > li > a{margin: 0rem 2rem 0rem 2rem;}
+
+/*main bölümü*/
+main{margin: 2.5rem 5rem 0rem 5rem;}
+main > section{
+    display: grid; 
+    margin: 2.5rem 5rem 0rem 5rem;
+}
