@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid ;
 }
+html{font-size: 15px;}
+
 
 /*header bölümü*/
 header{
@@ -24,8 +25,21 @@ header > ul > li{float: left;}
 header > ul > li > a{margin: 0rem 2rem 0rem 2rem;}
 
 /*main bölümü*/
-main{margin: 2.5rem 5rem 0rem 5rem;}
 main > section{
-    display: grid; 
     margin: 2.5rem 5rem 0rem 5rem;
+    display: grid;
+    grid-template-areas: 
+    "section figure figure"
+    "article article article";
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    margin: 5rem 5rem 5rem 5rem;
 }
+.bas{
+    display: grid;
+    grid-template-areas: 
+    "article img";
+}
+
+main > section{margin: 2.5rem 5rem 0rem 5rem;}
